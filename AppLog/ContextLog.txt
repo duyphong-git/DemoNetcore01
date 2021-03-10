@@ -264,3 +264,150 @@ info: 3/5/2021 21:09:34.041 RelationalEventId.CommandExecuted[20101] (Microsoft.
       SELECT TOP(2) [u].[Id], [u].[CreateDate], [u].[ModifyDate], [u].[PasswordHash], [u].[PasswordSalt], [u].[Username]
       FROM [Users] AS [u]
       WHERE [u].[Username] = @__model_Username_0
+info: 3/8/2021 19:38:14.117 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 5.0.3 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: 3/8/2021 19:38:14.755 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (66ms) [Parameters=[@__model_Username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [u].[Id], [u].[CreateDate], [u].[ModifyDate], [u].[PasswordHash], [u].[PasswordSalt], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__model_Username_0
+info: 3/8/2021 19:38:25.454 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 5.0.3 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: 3/8/2021 19:38:25.461 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[@__model_Username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [u].[Id], [u].[CreateDate], [u].[ModifyDate], [u].[PasswordHash], [u].[PasswordSalt], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__model_Username_0
+info: 3/8/2021 19:41:09.845 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 5.0.3 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: 3/8/2021 19:41:09.850 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[@__model_Username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [u].[Id], [u].[CreateDate], [u].[ModifyDate], [u].[PasswordHash], [u].[PasswordSalt], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__model_Username_0
+info: 3/8/2021 19:43:33.369 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 5.0.3 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: 3/8/2021 19:43:33.372 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[@__model_Username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [u].[Id], [u].[CreateDate], [u].[ModifyDate], [u].[PasswordHash], [u].[PasswordSalt], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__model_Username_0
+info: 3/8/2021 20:15:57.540 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 5.0.3 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: 3/8/2021 20:15:58.118 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (53ms) [Parameters=[@__model_Username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [u].[Id], [u].[CreateDate], [u].[ModifyDate], [u].[PasswordHash], [u].[PasswordSalt], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__model_Username_0
+info: 3/8/2021 20:16:08.168 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 5.0.3 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: 3/8/2021 20:16:08.176 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[@__model_Username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [u].[Id], [u].[CreateDate], [u].[ModifyDate], [u].[PasswordHash], [u].[PasswordSalt], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__model_Username_0
+info: 3/8/2021 20:17:44.654 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 5.0.3 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: 3/8/2021 20:17:44.657 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[@__model_Username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [u].[Id], [u].[CreateDate], [u].[ModifyDate], [u].[PasswordHash], [u].[PasswordSalt], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__model_Username_0
+info: 3/8/2021 20:18:17.584 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 5.0.3 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: 3/8/2021 20:18:17.586 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[@__model_Username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [u].[Id], [u].[CreateDate], [u].[ModifyDate], [u].[PasswordHash], [u].[PasswordSalt], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__model_Username_0
+info: 3/8/2021 20:19:50.626 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 5.0.3 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: 3/8/2021 20:19:50.630 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[@__model_Username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [u].[Id], [u].[CreateDate], [u].[ModifyDate], [u].[PasswordHash], [u].[PasswordSalt], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__model_Username_0
+info: 3/8/2021 20:33:31.695 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 5.0.3 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: 3/8/2021 20:33:31.723 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[@__model_Username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [u].[Id], [u].[CreateDate], [u].[ModifyDate], [u].[PasswordHash], [u].[PasswordSalt], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__model_Username_0
+info: 3/8/2021 20:40:07.260 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 5.0.3 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: 3/8/2021 20:40:07.262 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[@__model_Username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [u].[Id], [u].[CreateDate], [u].[ModifyDate], [u].[PasswordHash], [u].[PasswordSalt], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__model_Username_0
+info: 3/10/2021 18:56:42.797 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 5.0.3 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: 3/10/2021 18:56:43.532 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (59ms) [Parameters=[@__model_Username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(2) [u].[Id], [u].[CreateDate], [u].[ModifyDate], [u].[PasswordHash], [u].[PasswordSalt], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__model_Username_0
+info: 3/10/2021 19:38:56.208 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 5.0.3 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: 3/10/2021 19:38:56.742 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (37ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [u].[Id], [u].[CreateDate], [u].[ModifyDate], [u].[PasswordHash], [u].[PasswordSalt], [u].[Username]
+      FROM [Users] AS [u]
+info: 3/10/2021 19:39:35.758 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 5.0.3 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: 3/10/2021 19:39:35.768 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [u].[Id], [u].[CreateDate], [u].[ModifyDate], [u].[PasswordHash], [u].[PasswordSalt], [u].[Username]
+      FROM [Users] AS [u]
+info: 3/10/2021 19:39:35.787 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 5.0.3 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: 3/10/2021 19:39:35.790 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [u].[Id], [u].[CreateDate], [u].[ModifyDate], [u].[PasswordHash], [u].[PasswordSalt], [u].[Username]
+      FROM [Users] AS [u]
+info: 3/10/2021 19:40:04.077 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 5.0.3 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: 3/10/2021 19:40:04.180 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (24ms) [Parameters=[@__model_Username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[Id], [u].[CreateDate], [u].[ModifyDate], [u].[PasswordHash], [u].[PasswordSalt], [u].[Username]
+      FROM [Users] AS [u]
+      WHERE [u].[Username] = @__model_Username_0
+info: 3/10/2021 19:40:04.378 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = 8000) (DbType = Binary), @p3='?' (Size = 8000) (DbType = Binary), @p4='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      INSERT INTO [Users] ([CreateDate], [ModifyDate], [PasswordHash], [PasswordSalt], [Username])
+      VALUES (@p0, @p1, @p2, @p3, @p4);
+      SELECT [Id]
+      FROM [Users]
+      WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+info: 3/10/2021 19:40:11.144 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 5.0.3 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: 3/10/2021 19:40:11.147 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [u].[Id], [u].[CreateDate], [u].[ModifyDate], [u].[PasswordHash], [u].[PasswordSalt], [u].[Username]
+      FROM [Users] AS [u]
+info: 3/10/2021 19:40:11.150 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 5.0.3 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: 3/10/2021 19:40:11.152 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [u].[Id], [u].[CreateDate], [u].[ModifyDate], [u].[PasswordHash], [u].[PasswordSalt], [u].[Username]
+      FROM [Users] AS [u]
+info: 3/10/2021 19:40:53.572 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 5.0.3 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: 3/10/2021 19:40:53.575 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [u].[Id], [u].[CreateDate], [u].[ModifyDate], [u].[PasswordHash], [u].[PasswordSalt], [u].[Username]
+      FROM [Users] AS [u]
+info: 3/10/2021 19:40:53.578 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 5.0.3 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: 3/10/2021 19:40:53.580 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [u].[Id], [u].[CreateDate], [u].[ModifyDate], [u].[PasswordHash], [u].[PasswordSalt], [u].[Username]
+      FROM [Users] AS [u]
+info: 3/10/2021 19:44:44.960 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure) 
+      Entity Framework Core 5.0.3 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: 3/10/2021 19:44:44.963 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [u].[Id], [u].[CreateDate], [u].[ModifyDate], [u].[PasswordHash], [u].[PasswordSalt], [u].[Username]
+      FROM [Users] AS [u]

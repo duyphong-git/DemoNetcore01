@@ -22,8 +22,8 @@ namespace Api.Controllers
             _tokenService = tokenService;
         }
 
-        [Authorize]
         [HttpGet]
+        [AllowAnonymous]
         public async Task<IActionResult> GetAll()
         {
             var result = await _appUsersServices.GetUsersAsync();
@@ -68,6 +68,6 @@ namespace Api.Controllers
             }
             else
                 return BadRequest(result.Errors);
-        } 
+        }
     }
 }
