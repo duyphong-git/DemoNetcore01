@@ -1,5 +1,6 @@
 using System.Text;
 using Api.Data;
+using Api.Library.Middleware;
 using Api.Services.Implements;
 using Api.Services.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -59,11 +60,11 @@ namespace Api
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
             });
 
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-
+            //if (env.IsDevelopment())
+            //{
+            //    app.UseDeveloperExceptionPage();
+            //}
+            app.UseMiddleware<ExceptionMiddleWare>();
             //app.UseSerilogRequestLogging();
 
             app.UseHttpsRedirection();

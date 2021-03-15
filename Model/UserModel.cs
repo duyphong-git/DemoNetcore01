@@ -9,6 +9,7 @@ namespace Api.Model
         [Required]
         public string Username { get; set; }
         [Required]
+        [StringLength(8)]
         public string Password { get; set; }
     }
 }

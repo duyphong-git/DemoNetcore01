@@ -11,14 +11,12 @@ namespace Api.Controllers
 {
     public class UsersController : BaseController
     {
-        private readonly DataContext _context;
         private readonly IAppUsersServices _appUsersServices;
         private readonly ITokenService _tokenService;
 
         public UsersController(IAppUsersServices appUsersServices, DataContext context, ITokenService tokenService)
         {
             _appUsersServices = appUsersServices;
-            _context = context;
             _tokenService = tokenService;
         }
 
@@ -38,7 +36,14 @@ namespace Api.Controllers
         public async Task<ActionResult<AppUser>> CreateAsync(UserModel model)
         {
             var result = await _appUsersServices.CreateOrUpdateAsync(model);
-            return result.Succeed ? Ok(result.Value) : BadRequest(result.Errors);
+
+            if (result.Succeed)
+            {
+                var user = new UserLoginModel { Username = result.Value.Username, Token = _tokenService.CreateToken(result.Value) };
+                return Ok(user);
+            }
+            else
+                return BadRequest(result.Errors);
         }
 
         [HttpPut]

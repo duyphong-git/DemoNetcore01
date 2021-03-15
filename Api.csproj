@@ -33,5 +33,7 @@
     <Folder Include="Library\" />
     <Folder Include="Services\Interfaces\" />
     <Folder Include="Model\" />
+    <Folder Include="Library\Errors\" />
+    <Folder Include="Library\Middleware\" />
   </ItemGroup>
 </Project>
