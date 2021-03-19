@@ -896,14 +896,14 @@
           "lib/netstandard2.1/Serilog.dll": {}
         }
       },
-      "Serilog.AspNetCore/4.0.0-dev-00202": {
+      "Serilog.AspNetCore/4.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
           "Microsoft.Extensions.DependencyInjection": "3.1.8",
           "Microsoft.Extensions.Logging": "3.1.8",
           "Serilog": "2.10.0",
-          "Serilog.Extensions.Hosting": "4.1.0",
+          "Serilog.Extensions.Hosting": "4.1.2",
           "Serilog.Formatting.Compact": "1.1.0",
           "Serilog.Settings.Configuration": "3.1.0",
           "Serilog.Sinks.Console": "3.1.1",
@@ -917,7 +917,7 @@
           "lib/netstandard2.1/Serilog.AspNetCore.dll": {}
         }
       },
-      "Serilog.Extensions.Hosting/4.1.0": {
+      "Serilog.Extensions.Hosting/4.1.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.8",
@@ -3690,10 +3690,10 @@
         "serilog.nuspec"
       ]
     },
-    "Serilog.AspNetCore/4.0.0-dev-00202": {
-      "sha512": "HIT+3+SmTAHNhmF8h4dlURGHkXkaPAZ46Dj2wBb4ZsIwOPc5l5eivI4KXTI/5JNxjmQCZaru24YbJURycOW2Dg==",
+    "Serilog.AspNetCore/4.0.0": {
+      "sha512": "PG73qEGMdUP01uV/S7QYxPS0rNGWd3wkXHTCSPvkN0rV8HOE/RUVoPsfwGYCqml4zFEhNuMvaNOzsVXeDZ6g/g==",
       "type": "package",
-      "path": "serilog.aspnetcore/4.0.0-dev-00202",
+      "path": "serilog.aspnetcore/4.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3702,14 +3702,14 @@
         "lib/netstandard2.0/Serilog.AspNetCore.xml",
         "lib/netstandard2.1/Serilog.AspNetCore.dll",
         "lib/netstandard2.1/Serilog.AspNetCore.xml",
-        "serilog.aspnetcore.4.0.0-dev-00202.nupkg.sha512",
+        "serilog.aspnetcore.4.0.0.nupkg.sha512",
         "serilog.aspnetcore.nuspec"
       ]
     },
-    "Serilog.Extensions.Hosting/4.1.0": {
-      "sha512": "kNCYEE5UTTMOZWwelVBfW6NlxPGEnFHoak33NAkl6N9Il9Mf7mLpSpdXfBf6vipDiZ7ORF+6skZ54MQaP9aNhw==",
+    "Serilog.Extensions.Hosting/4.1.2": {
+      "sha512": "nOpvvYgDoepae4FsXnyX4uSYLO+f+v7aRyNpA0pbpxjdkpw3FWZtfQDe2gnUmZGNYMLWnxMRCPJQ455U/dOUbQ==",
       "type": "package",
-      "path": "serilog.extensions.hosting/4.1.0",
+      "path": "serilog.extensions.hosting/4.1.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3718,7 +3718,7 @@
         "lib/netstandard2.0/Serilog.Extensions.Hosting.xml",
         "lib/netstandard2.1/Serilog.Extensions.Hosting.dll",
         "lib/netstandard2.1/Serilog.Extensions.Hosting.xml",
-        "serilog.extensions.hosting.4.1.0.nupkg.sha512",
+        "serilog.extensions.hosting.4.1.2.nupkg.sha512",
         "serilog.extensions.hosting.nuspec"
       ]
     },
@@ -7578,7 +7578,7 @@
       "Microsoft.Extensions.Configuration >= 5.0.0",
       "Microsoft.Extensions.Logging.Console >= 5.0.0",
       "Newtonsoft.Json >= 12.0.3",
-      "Serilog.AspNetCore >= 4.0.0-dev-00202",
+      "Serilog.AspNetCore >= 4.0.0",
       "Swashbuckle.AspNetCore >= 6.0.7"
     ]
   },
@@ -7665,7 +7665,7 @@
           },
           "Serilog.AspNetCore": {
             "target": "Package",
-            "version": "[4.0.0-dev-00202, )"
+            "version": "[4.0.0, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

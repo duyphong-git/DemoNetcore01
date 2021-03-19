@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XcLNBiaBx1ryH9sggDmTUfx0Tglc6/4rQvMRXLtKyTLG6yb5SWEY/FCWGwsi2sTtvIN8Yq6AXsvCNu4jQzGi7w==",
+  "dgSpecHash": "ZQjoGMfuxPBtWrQ+/gyf8WuGP6ipPJD/n5DadMn8x1RrZV15wd6DYP+88u55lVC0xX2pyfnzGFfaQJqhgvHqdg==",
   "success": true,
   "projectFilePath": "/Users/phongnd/Downloads/recy/Net/WebApi01/Api/Api.csproj",
   "expectedPackageFiles": [
@@ -60,8 +60,8 @@
     "/Users/phongnd/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
     "/Users/phongnd/.nuget/packages/runtime.native.system/4.3.0/runtime.native.system.4.3.0.nupkg.sha512",
     "/Users/phongnd/.nuget/packages/serilog/2.10.0/serilog.2.10.0.nupkg.sha512",
-    "/Users/phongnd/.nuget/packages/serilog.aspnetcore/4.0.0-dev-00202/serilog.aspnetcore.4.0.0-dev-00202.nupkg.sha512",
-    "/Users/phongnd/.nuget/packages/serilog.extensions.hosting/4.1.0/serilog.extensions.hosting.4.1.0.nupkg.sha512",
+    "/Users/phongnd/.nuget/packages/serilog.aspnetcore/4.0.0/serilog.aspnetcore.4.0.0.nupkg.sha512",
+    "/Users/phongnd/.nuget/packages/serilog.extensions.hosting/4.1.2/serilog.extensions.hosting.4.1.2.nupkg.sha512",
     "/Users/phongnd/.nuget/packages/serilog.extensions.logging/3.0.1/serilog.extensions.logging.3.0.1.nupkg.sha512",
     "/Users/phongnd/.nuget/packages/serilog.formatting.compact/1.1.0/serilog.formatting.compact.1.1.0.nupkg.sha512",
     "/Users/phongnd/.nuget/packages/serilog.settings.configuration/3.1.0/serilog.settings.configuration.3.1.0.nupkg.sha512",

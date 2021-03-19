@@ -3,15 +3,18 @@ using System.IO;
 using System.Threading.Tasks;
 using Api.Entities;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 namespace Api.Data
 {
     public class DataContext : DbContext
     {
         public DbSet<AppUser> Users { get; set; }
+        private static ILogger _logger;
 
-        public DataContext(DbContextOptions options) : base(options)
+        public DataContext(DbContextOptions options, ILogger logger) : base(options)
         {
+            _logger = logger;
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -25,22 +28,8 @@ namespace Api.Data
             }
         }
 
-        private readonly StreamWriter _logStream = new StreamWriter("AppLog/ContextLog.txt", append: true);
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.LogTo(_logStream.WriteLine, Microsoft.Extensions.Logging.LogLevel.Information);
-
-        public override void Dispose()
-        {
-            base.Dispose();
-            _logStream.Dispose();
-        }
-
-        public override async ValueTask DisposeAsync()
-        {
-            await base.DisposeAsync();
-            await _logStream.DisposeAsync();
-        }
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //=> optionsBuilder.LogTo(_logger.Information);
 
     }
 }

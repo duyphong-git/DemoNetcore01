@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Api.Library.Errors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Hosting;
+using Serilog;
 
 namespace Api.Library.Middleware
 {
@@ -12,11 +13,13 @@ namespace Api.Library.Middleware
     {
         private readonly RequestDelegate _next;
         private readonly IHostEnvironment _env;
+        private readonly ILogger _logger;
 
-        public ExceptionMiddleWare(RequestDelegate next, IHostEnvironment env)
+        public ExceptionMiddleWare(RequestDelegate next, IHostEnvironment env, ILogger logger)
         {
             _next = next;
             _env = env;
+            _logger = logger;
         }
 
         public async Task InvokeAsync(HttpContext context)

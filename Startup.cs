@@ -65,7 +65,8 @@ namespace Api
             //    app.UseDeveloperExceptionPage();
             //}
             app.UseMiddleware<ExceptionMiddleWare>();
-            //app.UseSerilogRequestLogging();
+
+            app.UseSerilogRequestLogging();
 
             app.UseHttpsRedirection();
 

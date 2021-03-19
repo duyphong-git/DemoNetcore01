@@ -1,0 +1,17 @@
+2021-03-19T13:07:40.2405510+07:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2021-03-19T13:07:40.2666110+07:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2021-03-19T13:07:40.2668280+07:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2021-03-19T13:07:40.2669120+07:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2021-03-19T13:07:40.2670010+07:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "/Users/phongnd/Downloads/recy/Net/WebApi01/Api"
+2021-03-19T13:07:49.8254930+07:00 [INF] () Microsoft.AspNetCore.Http.DefaultHttpContext
+2021-03-19T13:07:51.2250350+07:00 [INF] (Serilog.AspNetCore.RequestLoggingMiddleware) HTTP "GET" "/api/users" responded 200 in 1395.8448 ms
+2021-03-19T13:09:33.5161590+07:00 [INF] () Microsoft.AspNetCore.Http.DefaultHttpContext
+2021-03-19T13:09:33.5520140+07:00 [INF] (Serilog.AspNetCore.RequestLoggingMiddleware) HTTP "GET" "/api/users" responded 200 in 35.6722 ms
+2021-03-19T13:09:41.0673700+07:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2021-03-19T13:09:47.4314350+07:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2021-03-19T13:09:47.4510890+07:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2021-03-19T13:09:47.4513590+07:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2021-03-19T13:09:47.4514520+07:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2021-03-19T13:09:47.4515220+07:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "/Users/phongnd/Downloads/recy/Net/WebApi01/Api"
+2021-03-19T13:09:52.1010310+07:00 [INF] () 213
+2021-03-19T13:09:53.4612280+07:00 [INF] (Serilog.AspNetCore.RequestLoggingMiddleware) HTTP "GET" "/api/users" responded 200 in 1356.0555 ms

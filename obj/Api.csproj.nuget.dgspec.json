@@ -84,7 +84,7 @@
             },
             "Serilog.AspNetCore": {
               "target": "Package",
-              "version": "[4.0.0-dev-00202, )"
+              "version": "[4.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

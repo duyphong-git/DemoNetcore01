@@ -43,7 +43,7 @@
           "Microsoft.Extensions.Configuration": "5.0.0",
           "Microsoft.Extensions.Logging.Console": "5.0.0",
           "Newtonsoft.Json": "12.0.3",
-          "Serilog.AspNetCore": "4.0.0-dev-00202",
+          "Serilog.AspNetCore": "4.0.0",
           "Swashbuckle.AspNetCore": "6.0.7",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
@@ -888,13 +888,13 @@
           "lib/netstandard2.1/Serilog.dll": {}
         }
       },
-      "Serilog.AspNetCore/4.0.0-dev-00202": {
+      "Serilog.AspNetCore/4.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
           "Microsoft.Extensions.DependencyInjection": "5.0.1",
           "Microsoft.Extensions.Logging": "5.0.0",
           "Serilog": "2.10.0",
-          "Serilog.Extensions.Hosting": "4.1.0",
+          "Serilog.Extensions.Hosting": "4.1.2",
           "Serilog.Formatting.Compact": "1.1.0",
           "Serilog.Settings.Configuration": "3.1.0",
           "Serilog.Sinks.Console": "3.1.1",
@@ -911,7 +911,7 @@
           "lib/netstandard2.1/Serilog.AspNetCore.dll": {}
         }
       },
-      "Serilog.Extensions.Hosting/4.1.0": {
+      "Serilog.Extensions.Hosting/4.1.2": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
           "Microsoft.Extensions.Hosting.Abstractions": "3.1.8",
@@ -922,7 +922,7 @@
         "runtime": {
           "lib/netstandard2.1/Serilog.Extensions.Hosting.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.1.0.0"
+            "fileVersion": "4.1.2.0"
           }
         },
         "compile": {
@@ -3797,19 +3797,19 @@
       "path": "serilog/2.10.0",
       "hashPath": "serilog.2.10.0.nupkg.sha512"
     },
-    "Serilog.AspNetCore/4.0.0-dev-00202": {
+    "Serilog.AspNetCore/4.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-HIT+3+SmTAHNhmF8h4dlURGHkXkaPAZ46Dj2wBb4ZsIwOPc5l5eivI4KXTI/5JNxjmQCZaru24YbJURycOW2Dg==",
-      "path": "serilog.aspnetcore/4.0.0-dev-00202",
-      "hashPath": "serilog.aspnetcore.4.0.0-dev-00202.nupkg.sha512"
+      "sha512": "sha512-PG73qEGMdUP01uV/S7QYxPS0rNGWd3wkXHTCSPvkN0rV8HOE/RUVoPsfwGYCqml4zFEhNuMvaNOzsVXeDZ6g/g==",
+      "path": "serilog.aspnetcore/4.0.0",
+      "hashPath": "serilog.aspnetcore.4.0.0.nupkg.sha512"
     },
-    "Serilog.Extensions.Hosting/4.1.0": {
+    "Serilog.Extensions.Hosting/4.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kNCYEE5UTTMOZWwelVBfW6NlxPGEnFHoak33NAkl6N9Il9Mf7mLpSpdXfBf6vipDiZ7ORF+6skZ54MQaP9aNhw==",
-      "path": "serilog.extensions.hosting/4.1.0",
-      "hashPath": "serilog.extensions.hosting.4.1.0.nupkg.sha512"
+      "sha512": "sha512-nOpvvYgDoepae4FsXnyX4uSYLO+f+v7aRyNpA0pbpxjdkpw3FWZtfQDe2gnUmZGNYMLWnxMRCPJQ455U/dOUbQ==",
+      "path": "serilog.extensions.hosting/4.1.2",
+      "hashPath": "serilog.extensions.hosting.4.1.2.nupkg.sha512"
     },
     "Serilog.Extensions.Logging/3.0.1": {
       "type": "package",
