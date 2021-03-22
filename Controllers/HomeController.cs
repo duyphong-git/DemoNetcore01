@@ -42,19 +42,5 @@ namespace Api.Controllers
             })
             .ToArray();
         }
-
-        //[HttpGet("Users")]
-        //public IActionResult GetUser()
-        //{
-        //    try
-        //    {
-        //        var users = _dbContext.Users.AsNoTracking().ToList();
-        //        return Ok(users.AsEnumerable<AppUser>());
-        //    }
-        //    catch {
-        //        return NotFound();
-        //    }
-            
-        //}
     }
 }

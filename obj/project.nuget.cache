@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ZQjoGMfuxPBtWrQ+/gyf8WuGP6ipPJD/n5DadMn8x1RrZV15wd6DYP+88u55lVC0xX2pyfnzGFfaQJqhgvHqdg==",
+  "dgSpecHash": "CGa85+fUJJBl0aLp2l7fA8Txut+FXtxQlTSf0J0EPGk9aLdBXVhroPc0xOQT03/Ij4meyod+SKhccR+jkCS6GA==",
   "success": true,
   "projectFilePath": "/Users/phongnd/Downloads/recy/Net/WebApi01/Api/Api.csproj",
   "expectedPackageFiles": [
     "/Users/phongnd/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
+    "/Users/phongnd/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/8.1.1/automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "/Users/phongnd/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/phongnd/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/5.0.3/microsoft.aspnetcore.authentication.jwtbearer.5.0.3.nupkg.sha512",
     "/Users/phongnd/.nuget/packages/microsoft.aspnetcore.hosting.abstractions/2.2.0/microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg.sha512",

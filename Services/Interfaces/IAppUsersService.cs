@@ -14,5 +14,7 @@ namespace Api.Services.Interfaces
         Task<ProcessResult<AppUser>> CreateOrUpdateAsync(UserModel model);
         Task<ProcessResult> DeleteAsync(int id);
         Task<ProcessResult<AppUser>> LoginAsync(LoginModel model);
+        Task<ProcessResult<AppUser>> GetUserByIdAsync(int id);
+        Task<ProcessResult<AppUser>> GetUserByUsernameAsync(string username);
     }
 }

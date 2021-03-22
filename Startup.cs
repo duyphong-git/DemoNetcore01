@@ -1,5 +1,6 @@
 using System.Text;
 using Api.Data;
+using Api.Library.Helpers;
 using Api.Library.Middleware;
 using Api.Services.Implements;
 using Api.Services.Interfaces;
@@ -33,7 +34,7 @@ namespace Api
             services.AddDbContext<DataContext>(options => {
                 options.UseSqlServer(_config.GetConnectionString("SqlConnection"));
             });
-
+            services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
             services.AddTransient<DataContext>();
             services.AddTransient<IAppUsersServices, AppUsersService>();
             services.AddScoped<ITokenService, TokenService>();

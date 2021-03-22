@@ -6,30 +6,56 @@ using Microsoft.AspNetCore.Mvc;
 using Api.Services.Interfaces;
 using Api.Model;
 using Microsoft.AspNetCore.Authorization;
+using AutoMapper;
+using System.Collections.Generic;
 
 namespace Api.Controllers
 {
+    [Authorize]
     public class UsersController : BaseController
     {
         private readonly IAppUsersServices _appUsersServices;
         private readonly ITokenService _tokenService;
+        private readonly IMapper _mapper;
 
-        public UsersController(IAppUsersServices appUsersServices, DataContext context, ITokenService tokenService)
+        public UsersController(IAppUsersServices appUsersServices, ITokenService tokenService, IMapper mapper)
         {
             _appUsersServices = appUsersServices;
             _tokenService = tokenService;
+            _mapper = mapper;
         }
 
         [HttpGet]
-        [AllowAnonymous]
-        public async Task<IActionResult> GetAll()
+        public async Task<ActionResult<IEnumerable<MemberDTO>>> GetAll()
         {
             var result = await _appUsersServices.GetUsersAsync();
             if (!result.Succeed)
             {
                 return BadRequest(result.Errors);
             }
-            return result.Value.Any() ? Ok(result.Value) : NoContent();
+            return result.Value.Any() ? Ok(_mapper.Map<IEnumerable<MemberDTO>>(result.Value)) : NoContent();
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<AppUser>> GetByIdAsync(int id)
+        {
+            var result = await _appUsersServices.GetUserByIdAsync(id);
+            if (!result.Succeed)
+            {
+                return BadRequest(result.Errors);
+            }
+            return result.Value != null ? Ok(result.Value) : BadRequest();
+        }
+
+        [HttpGet("{username}")]
+        public async Task<ActionResult<AppUser>> GetByUsernameAsync(string username)
+        {
+            var result = await _appUsersServices.GetUserByUsernameAsync(username);
+            if (!result.Succeed)
+            {
+                return BadRequest(result.Errors);
+            }
+            return result.Value != null ? Ok(result.Value) : BadRequest();
         }
 
         [HttpPost]

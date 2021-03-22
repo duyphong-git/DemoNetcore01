@@ -72,3 +72,5 @@
 /Users/phongnd/Downloads/recy/Net/WebApi01/Api/bin/Debug/net5.0/Serilog.Sinks.Debug.dll
 /Users/phongnd/Downloads/recy/Net/WebApi01/Api/bin/Debug/net5.0/Serilog.Sinks.File.dll
 /Users/phongnd/Downloads/recy/Net/WebApi01/Api/bin/Debug/net5.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/phongnd/Downloads/recy/Net/WebApi01/Api/bin/Debug/net5.0/Data/UserSeedData.json
+/Users/phongnd/Downloads/recy/Net/WebApi01/Api/bin/Debug/net5.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll

@@ -24,7 +24,7 @@ namespace Api.Services.Implements
         {
             Func<Task<IEnumerable<AppUser>>> action = async () =>
             {
-                var result = await context.Users.AsNoTracking().ToListAsync();
+                var result = await context.Users.AsNoTracking().Include(p=>p.Photos).ToListAsync();
                 return result;
             };
 
@@ -100,6 +100,28 @@ namespace Api.Services.Implements
                         throw new InvalidOperationException("Invalid password!");
                 }
 
+                return user;
+            };
+
+            return await Process.RunAsync(action);
+        }
+
+        public async Task<ProcessResult<AppUser>> GetUserByIdAsync(int id)
+        {
+            Func<Task<AppUser>> action = async () =>
+            {
+                var user = await context.Users.FirstOrDefaultAsync(x => x.Id == id);
+                return user;
+            };
+
+            return await Process.RunAsync(action);
+        }
+
+        public async Task<ProcessResult<AppUser>> GetUserByUsernameAsync(string username)
+        {
+            Func<Task<AppUser>> action = async () =>
+            {
+                var user = await context.Users.FirstOrDefaultAsync(x => x.Username == username);
                 return user;
             };
 

@@ -1,0 +1,52 @@
+2021-03-22T19:08:21.9205720+07:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2021-03-22T19:08:21.9462720+07:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2021-03-22T19:08:21.9465660+07:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2021-03-22T19:08:21.9466520+07:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2021-03-22T19:08:21.9467170+07:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "/Users/phongnd/Downloads/recy/Net/WebApi01/Api"
+2021-03-22T19:15:25.6979200+07:00 [INF] (Serilog.AspNetCore.RequestLoggingMiddleware) HTTP "GET" "/api/users" responded 307 in 2.1088 ms
+2021-03-22T19:15:25.8324510+07:00 [INF] (Serilog.AspNetCore.RequestLoggingMiddleware) HTTP "GET" "/api/users" responded 401 in 75.0240 ms
+2021-03-22T19:15:47.5838790+07:00 [INF] (Serilog.AspNetCore.RequestLoggingMiddleware) HTTP "GET" "/api/users/login" responded 307 in 0.0722 ms
+2021-03-22T19:15:47.5893900+07:00 [ERR] (Serilog.AspNetCore.RequestLoggingMiddleware) HTTP "GET" "/api/users/login" responded 500 in 1.3010 ms
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+Api.Controllers.UsersController.GetByIdAsync (Api)
+Api.Controllers.UsersController.GetByUsernameAsync (Api)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-03-22T19:15:56.8290730+07:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
+2021-03-22T19:17:21.9384040+07:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2021-03-22T19:17:21.9625750+07:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "http://localhost:5000"
+2021-03-22T19:17:21.9628480+07:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2021-03-22T19:17:21.9629330+07:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2021-03-22T19:17:21.9630100+07:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "/Users/phongnd/Downloads/recy/Net/WebApi01/Api"
+2021-03-22T19:17:31.3382710+07:00 [INF] (Serilog.AspNetCore.RequestLoggingMiddleware) HTTP "GET" "/api/users/login" responded 307 in 1.9373 ms
+2021-03-22T19:17:31.4249570+07:00 [ERR] (Serilog.AspNetCore.RequestLoggingMiddleware) HTTP "GET" "/api/users/login" responded 500 in 26.9888 ms
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+Api.Controllers.UsersController.GetByIdAsync (Api)
+Api.Controllers.UsersController.GetByUsernameAsync (Api)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-03-22T19:17:39.2675650+07:00 [INF] (Serilog.AspNetCore.RequestLoggingMiddleware) HTTP "POST" "/api/users/login" responded 307 in 0.0522 ms
+2021-03-22T19:17:39.5029430+07:00 [INF] (Serilog.AspNetCore.RequestLoggingMiddleware) HTTP "POST" "/api/users/login" responded 415 in 231.5262 ms
+2021-03-22T19:17:47.0311210+07:00 [INF] (Serilog.AspNetCore.RequestLoggingMiddleware) HTTP "POST" "/api/users/login" responded 307 in 0.0207 ms
+2021-03-22T19:17:47.3584990+07:00 [INF] (Serilog.AspNetCore.RequestLoggingMiddleware) HTTP "POST" "/api/users/login" responded 200 in 325.0047 ms
+2021-03-22T19:18:05.9650110+07:00 [INF] (Serilog.AspNetCore.RequestLoggingMiddleware) HTTP "GET" "/api/users" responded 307 in 0.0183 ms
+2021-03-22T19:18:06.2440050+07:00 [INF] (Serilog.AspNetCore.RequestLoggingMiddleware) HTTP "GET" "/api/users" responded 200 in 276.7244 ms
+2021-03-22T19:22:53.2293470+07:00 [INF] (Serilog.AspNetCore.RequestLoggingMiddleware) HTTP "GET" "/api/users" responded 307 in 0.0205 ms
+2021-03-22T19:22:53.2627950+07:00 [INF] (Serilog.AspNetCore.RequestLoggingMiddleware) HTTP "GET" "/api/users" responded 200 in 10.7721 ms
+2021-03-22T19:22:54.0158480+07:00 [INF] (Serilog.AspNetCore.RequestLoggingMiddleware) HTTP "GET" "/api/users" responded 307 in 0.0208 ms
+2021-03-22T19:22:54.0229670+07:00 [INF] (Serilog.AspNetCore.RequestLoggingMiddleware) HTTP "GET" "/api/users" responded 200 in 5.2234 ms
+2021-03-22T19:26:38.5698900+07:00 [INF] (Microsoft.Hosting.Lifetime) Application is shutting down...
