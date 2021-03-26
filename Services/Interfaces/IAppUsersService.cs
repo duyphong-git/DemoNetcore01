@@ -16,5 +16,6 @@ namespace Api.Services.Interfaces
         Task<ProcessResult<AppUser>> LoginAsync(LoginModel model);
         Task<ProcessResult<AppUser>> GetUserByIdAsync(int id);
         Task<ProcessResult<AppUser>> GetUserByUsernameAsync(string username);
+        Task<ProcessResult<IEnumerable<MemberDTO>>> GetMemberDOTAsync();
     }
 }

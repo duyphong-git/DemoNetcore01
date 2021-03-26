@@ -3,7 +3,9 @@ namespace Api.Model
 {
     public class UserLoginModel
     {
-        public string Username { get; set; }
+        //internal string UserName;
+
+        public string UserName { get; set; }
         public string Token { get; set; }
     }
 }

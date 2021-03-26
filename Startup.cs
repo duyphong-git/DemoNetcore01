@@ -1,5 +1,6 @@
 using System.Text;
 using Api.Data;
+using Api.Entities;
 using Api.Library.Helpers;
 using Api.Library.Middleware;
 using Api.Services.Implements;
@@ -7,6 +8,7 @@ using Api.Services.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -26,9 +28,21 @@ namespace Api
             _config = configuration;
         }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddIdentityCore<AppUser>(opt =>
+            {
+                opt.Password.RequireDigit = false;
+                opt.Password.RequireNonAlphanumeric = false;
+                opt.Password.RequireUppercase = false;
+                opt.Password.RequireLowercase = false;
+            })
+                    .AddRoles<AppRole>()
+                    .AddRoleManager<RoleManager<AppRole>>()
+                    .AddSignInManager<SignInManager<AppUser>>()
+                    .AddRoleValidator<RoleValidator<AppRole>>()
+                    .AddEntityFrameworkStores<DataContext>();
+
             services.AddControllers();
             services.AddCors();
             services.AddDbContext<DataContext>(options => {

@@ -2,14 +2,18 @@
 using System.IO;
 using System.Threading.Tasks;
 using Api.Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 
 namespace Api.Data
 {
-    public class DataContext : DbContext
+    public class DataContext : IdentityDbContext<AppUser, AppRole, int,
+            IdentityUserClaim<int>,AppUserRole, IdentityUserLogin<int>,
+            IdentityRoleClaim<int>, IdentityUserToken<int>>
     {
-        public DbSet<AppUser> Users { get; set; }
+
         private static ILogger _logger;
 
         public DataContext(DbContextOptions options, ILogger logger) : base(options)
@@ -17,19 +21,34 @@ namespace Api.Data
             _logger = logger;
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder builder)
         {
-            var allEntities = modelBuilder.Model.GetEntityTypes();
+            base.OnModelCreating(builder);
 
-            foreach(var entity in allEntities)
-            {
-                entity.AddProperty("CreateDate", typeof(DateTime));
-                entity.AddProperty("ModifyDate", typeof(DateTime));
-            }
+            builder.Entity<AppUser>()
+                    .HasMany(ur => ur.UserRole)
+                    .WithOne(u => u.User)
+                    .HasForeignKey(ur => ur.UserId)
+                    .IsRequired();
+
+            builder.Entity<AppRole>()
+                    .HasMany(ur => ur.UserRoles)
+                    .WithOne(u => u.Role)
+                    .HasForeignKey(ur => ur.RoleId)
+                    .IsRequired();
+            //var allEntities = builder.Model.GetEntityTypes();
+
+            //foreach(var entity in allEntities)
+            //{
+            //    entity.AddProperty("CreateDate", typeof(DateTime));
+            //    entity.AddProperty("ModifyDate", typeof(DateTime));
+            //}
         }
 
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //=> optionsBuilder.LogTo(_logger.Information);
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        => optionsBuilder.LogTo(_logger.Information);
+
+
 
     }
 }

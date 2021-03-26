@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using Api.Library.Extensions;
+using Microsoft.AspNetCore.Identity;
+
 namespace Api.Entities
 {
-    public class AppUser
+    public class AppUser : IdentityUser<int>
     {
-        public int? Id { get; set; }
-        public string Username { get; set; }
-        public byte[] PasswordHash { get; set; }
-        public byte[] PasswordSalt { get; set; }
         public DateTime DateOfBirth { get; set; }
         public string KnownAs { get; set; }
         public DateTime Created { get; set; }
@@ -20,8 +18,9 @@ namespace Api.Entities
         public string City { get; set; }
         public string Country { get; set; }
         public ICollection<Photo> Photos { get; set; }
+        public ICollection<AppUserRole> UserRole { get; set; }
 
-        public int getAge()
+        public int GetAge()
         {
             return DateOfBirth.GetAge();
         }
